@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar-brand,.nav-link{
+    color: white;
+}
+.header{
+    position: relative;
+    height: 100vh;
+
+    overflow: hidden;
+}
+.carousel{
+    overflow-x: hidden;
+}
+.carousel-item img{
+  height: 100vh;
+}
+#loading{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: orange;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    /* في الوسط spinnreعشان اجيب ال */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*بجيب هاد الكود من css3 spinnre*/
+.spinner {
+    margin: 100px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    
+    -webkit-animation: sk-rotate 2.0s infinite linear;
+    animation: sk-rotate 2.0s infinite linear;
+  }
+  
+  .dot1, .dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: #333;
+    border-radius: 100%;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .dot2 {
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+  @keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+  /*end spinnre*/
+/*start register*/
+  .register-page{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(8, 8, 8, .766);
+  display: none;
+  animation: anmform 1.5s;
+  transition: 1s ease-in-out;
+  }
+
+  @keyframes anmform{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+  }
+
+  
+  .box{
+    width: 30%;
+  }
+  .overlay-reg{
+    position: fixed;/*عشان في اي مكان بكبس داخل هاد الoverlay يعمل الاشي الي بدي اياه فب الجافاسكربت*/
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+
+  }
+  /*end register*/

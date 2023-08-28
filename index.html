@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--import bootstrap-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+     <!--import font awesome-->
+     <link rel="stylesheet" href="assets/css/all.min.css">
+      <!--import main css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="loading">
+    <div class="spinner"><!--بجيبها من css3 spinnre-->
+      <div class="dot1"></div>
+      <div class="dot2"></div>
+    </div>
+
+  </div>
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="register">register</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+
+  <!--start header-->
+<header class="header " id="header">
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item">
+<img src="assets/img/slide1.jpg" alt="" class="w-100 ">
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <img src="assets/img/slide2.jpg" alt="" class="w-100">
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+<section class="register-page py-5 " id="register-page">
+  <div class="bg-white  m-auto mt-5 box">
+    <div class="container">
+      <p class="pt-5 pb-1 text-center">Register a new account</p>
+      <form class="register-form text-center">
+        <input type="text" class="form-input d-block p-1 mb-3 w-100" placeholder="user name">
+        <input type="text" class="form-input d-block p-1 mb-3 w-100" placeholder="user name">
+        <input type="text" class="form-input d-block p-1 mb-3 w-100" placeholder="user name">
+        <input type="text" class="form-input d-block p-1 mb-5 w-100" placeholder="user name">
+        <button type="submit" class="btn btn-warning mb-3 w-100 border-0 rounded-0 ">sign in</button>
+      </form>
+    </div>
+    <div class="overlay-reg" id="overlay-reg"></div><!--عشان لما اكبس على البكس يختفي-->
+  </div>
+</section>
+
+
+
+</header>
+
+
+
+
+
+     <!--import bootstrap js-->
+     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    
+         <!--import jq js-->
+         <script src="assets/js/jquery-3.6.1.min.js"></script>
+            <!--import main js-->
+       <script src="assets/js/main.js"></script>
+</body>
+</html>
